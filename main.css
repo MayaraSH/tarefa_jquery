@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input[type="text"], form input[type="date"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="text"]:focus, form input[type="date"]:focus {
+    border-color: #056a79;
+    outline: none;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #056a79;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #003942;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+thead th {
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #056a79;
+}
+
+thead th:nth-child(2), 
+tbody td:nth-child(2) {
+    text-align: center; 
+    padding-right: 57px; 
+}
+
+.lista-tarefas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-tarefas ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.lista-tarefas ul li .tarefa {
+    flex: 2;
+    text-align: left;
+}
+
+.lista-tarefas ul li .prazo {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.lista-tarefas ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.lista-tarefas ul li button .fas {
+    color: #056a79;
+    padding: 0 5px;
+}
+
+.lista-tarefas ul li button:hover .fas {
+    color: #056a79;
+    padding: 0 5px;
+}
+
+.lista-tarefas ul li .tarefa-executada {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.lista-tarefas ul li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./Images/clipboard.png" alt="imagem check list de tarefas" />
+            <h1>Lista de tarefas</h1>
+        </header>
+        <form id="tarefas-executar">
+            <input type="text" id="descricao-tarefa" required placeholder="Nova Tarefa" />
+            <input type="date" id="prazo" placeholder="Prazo"/>
+            <button type="submit"> Adicionar</button>
+        </form>
+        <table cellspacing="0">
+            <thead> 
+                <tr>
+                    <th>Tarefas</th>
+                    <th>Prazo</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+        <div class="lista-tarefas">
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js "></script>
+</body>
+</html>
